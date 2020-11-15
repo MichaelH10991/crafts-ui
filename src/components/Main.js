@@ -30,8 +30,8 @@ export default function Main() {
 
   return (
     <div className={classes.root}>
-      <GridList cellHeight={180} className={classes.gridList} cols={4}>
-        <GridListTile key="Subheader" cols={4} style={{ height: "auto" }}>
+      <GridList cellHeight={180} className={classes.gridList} cols={2}>
+        <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
           <ListSubheader component="div">October</ListSubheader>
         </GridListTile>
         {data.map((tile, index) => (
