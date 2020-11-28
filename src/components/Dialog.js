@@ -68,7 +68,7 @@ export default function CustomizedDialogs(props) {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
 
-  const { title, description } = props.data;
+  const { title, description, price } = props.data;
 
   const handleOpen = () => {
     setOpen(true);
@@ -93,10 +93,11 @@ export default function CustomizedDialogs(props) {
         open={open}
       >
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {title}
+          {title}: £{price}
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>{description}</Typography>
+          <Typography gutterBottom>£{price}</Typography>
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose} color="primary">

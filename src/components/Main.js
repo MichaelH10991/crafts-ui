@@ -40,7 +40,7 @@ export default function Main() {
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
+              subtitle={<span>£{tile.price}</span>}
               actionIcon={<Dialog data={tile} />}
             />
           </GridListTile>
